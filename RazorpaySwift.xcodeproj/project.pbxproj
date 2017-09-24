@@ -28,6 +28,7 @@
 		3A507CDE1F77FF9900D7821C /* Razorpay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Razorpay.framework; path = RazorpaySwift/Frameworks/Razorpay.framework; sourceTree = "<group>"; };
 		3A507CE01F7801DB00D7821C /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		3A507CE21F7801E800D7821C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3A507CE41F7802CD00D7821C /* RazorpaySwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RazorpaySwift-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +71,7 @@
 				3A507CD21F77FD7300D7821C /* Assets.xcassets */,
 				3A507CD41F77FD7300D7821C /* LaunchScreen.storyboard */,
 				3A507CD71F77FD7300D7821C /* Info.plist */,
+				3A507CE41F7802CD00D7821C /* RazorpaySwift-Bridging-Header.h */,
 			);
 			path = RazorpaySwift;
 			sourceTree = "<group>";
@@ -291,6 +293,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.harsh.RazorpaySwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RazorpaySwift/RazorpaySwift-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -309,6 +312,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.harsh.RazorpaySwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RazorpaySwift/RazorpaySwift-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
