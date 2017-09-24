@@ -12,6 +12,7 @@
 		3A507CD11F77FD7300D7821C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A507CCF1F77FD7200D7821C /* Main.storyboard */; };
 		3A507CD31F77FD7300D7821C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A507CD21F77FD7300D7821C /* Assets.xcassets */; };
 		3A507CD61F77FD7300D7821C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A507CD41F77FD7300D7821C /* LaunchScreen.storyboard */; };
+		3A507CDF1F77FF9900D7821C /* Razorpay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A507CDE1F77FF9900D7821C /* Razorpay.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3A507CD21F77FD7300D7821C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A507CD51F77FD7300D7821C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A507CD71F77FD7300D7821C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A507CDE1F77FF9900D7821C /* Razorpay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Razorpay.framework; path = RazorpaySwift/Frameworks/Razorpay.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A507CDF1F77FF9900D7821C /* Razorpay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +42,7 @@
 			isa = PBXGroup;
 			children = (
 				3A507CCA1F77FD7200D7821C /* RazorpaySwift */,
+				3A507CDD1F77FF8300D7821C /* Frameworks */,
 				3A507CC91F77FD7200D7821C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +66,14 @@
 				3A507CD71F77FD7300D7821C /* Info.plist */,
 			);
 			path = RazorpaySwift;
+			sourceTree = "<group>";
+		};
+		3A507CDD1F77FF8300D7821C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A507CDE1F77FF9900D7821C /* Razorpay.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +274,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JFR6BQT7A8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RazorpaySwift/Frameworks",
+				);
 				INFOPLIST_FILE = RazorpaySwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.harsh.RazorpaySwift;
@@ -275,6 +291,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JFR6BQT7A8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RazorpaySwift/Frameworks",
+				);
 				INFOPLIST_FILE = RazorpaySwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.harsh.RazorpaySwift;
