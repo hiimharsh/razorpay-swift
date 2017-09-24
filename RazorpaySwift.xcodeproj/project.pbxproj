@@ -13,6 +13,8 @@
 		3A507CD31F77FD7300D7821C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A507CD21F77FD7300D7821C /* Assets.xcassets */; };
 		3A507CD61F77FD7300D7821C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A507CD41F77FD7300D7821C /* LaunchScreen.storyboard */; };
 		3A507CDF1F77FF9900D7821C /* Razorpay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A507CDE1F77FF9900D7821C /* Razorpay.framework */; };
+		3A507CE11F7801DB00D7821C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A507CE01F7801DB00D7821C /* CoreTelephony.framework */; };
+		3A507CE31F7801E800D7821C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A507CE21F7801E800D7821C /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		3A507CD51F77FD7300D7821C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A507CD71F77FD7300D7821C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A507CDE1F77FF9900D7821C /* Razorpay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Razorpay.framework; path = RazorpaySwift/Frameworks/Razorpay.framework; sourceTree = "<group>"; };
+		3A507CE01F7801DB00D7821C /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		3A507CE21F7801E800D7821C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A507CE31F7801E800D7821C /* SystemConfiguration.framework in Frameworks */,
+				3A507CE11F7801DB00D7821C /* CoreTelephony.framework in Frameworks */,
 				3A507CDF1F77FF9900D7821C /* Razorpay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +77,8 @@
 		3A507CDD1F77FF8300D7821C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3A507CE21F7801E800D7821C /* SystemConfiguration.framework */,
+				3A507CE01F7801DB00D7821C /* CoreTelephony.framework */,
 				3A507CDE1F77FF9900D7821C /* Razorpay.framework */,
 			);
 			name = Frameworks;
@@ -280,6 +288,7 @@
 				);
 				INFOPLIST_FILE = RazorpaySwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.harsh.RazorpaySwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -297,6 +306,7 @@
 				);
 				INFOPLIST_FILE = RazorpaySwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.harsh.RazorpaySwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
